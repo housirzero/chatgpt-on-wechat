@@ -65,9 +65,11 @@ function install_py()
 ```
 
 ## yum无法使用python3，需要修改yum的配置文件
+```
 sed -i "s/\/usr\/bin\/python/\/usr\/bin\/python2/g" /usr/bin/yum
 sed -i "s/\/usr\/bin\/python/\/usr\/bin\/python2/g" /usr/libexec/urlgrabber-ext-down
 sed -i "s/\/usr\/bin\/python/\/usr\/bin\/python2/g" /usr/bin/yum-config-manager
+```
 
 ## 参考
 [CentOS安装python3后使用yum报错](https://cloud.tencent.com/developer/article/1800245)
